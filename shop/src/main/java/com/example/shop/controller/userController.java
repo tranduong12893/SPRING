@@ -15,10 +15,11 @@ import java.util.Optional;
  * http://localhost:8080/api/V1/users      |   POST    | create new user
  * http://localhost:8080/api/V1/users/1    |   DELETE  | remove user
  * http://localhost:8080/api/V1/users/1    |   GET     | find user by id
- * http://localhost:8080/api/V1/users/1    |   PUT     | update user
+ * http://localhost:8080/api/V1/users/1    |   PUT     | update user..
  */
 
 
+@CrossOrigin(value = "*")
 @RestController
 @RequestMapping(path = "api/v1/users")
 public class userController {

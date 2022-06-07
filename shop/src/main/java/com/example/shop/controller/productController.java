@@ -20,6 +20,7 @@ import java.util.Optional;
  */
 
 
+@CrossOrigin(value = "*")
 @RestController
 @RequestMapping(path = "api/v1/products")
 public class productController {
@@ -68,6 +69,7 @@ public class productController {
         existingProduct.setDescription(updateProduct.getDescription());
         existingProduct.setDetail(updateProduct.getDetail());
         existingProduct.setPrice(updateProduct.getPrice());
+        existingProduct.setThumbnail(updateProduct.getThumbnail());
         existingProduct.setOrigin(updateProduct.getOrigin());
         existingProduct.setUpdateByUser(updateProduct.getUpdateByUser());
         existingProduct.setStatus(updateProduct.getStatus());
